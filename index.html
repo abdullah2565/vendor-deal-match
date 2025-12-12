@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deal Matched!</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        background-color: #f7f7f7;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+      .email-container {
+        max-width: 600px;
+        background-color: #ffffff;
+        padding: 20px 40px;
+      }
+
+      .header {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+      .header .logo img {
+        width: 100px;
+        margin-top: 20px;
+      }
+      .header .link-to-website {
+        float: right;
+        font-size: 14px;
+        margin-top: 25px;
+      }
+      .hero-content img {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+      }
+      .content .title {
+        font-weight: 600;
+        font-size: 22px;
+        color: #333;
+        text-align: center;
+        margin-top: 24px;
+      }
+      .content p {
+        margin-bottom: 15px;
+        line-height: 1.5;
+        font-size: 14px;
+        text-align: center;
+        color: gray;
+      }
+      .signature {
+        margin-bottom: 15px;
+        margin-top: 22px;
+        border-bottom: 1px solid gainsboro;
+        padding-bottom: 20px;
+        text-align: center;
+        color: gray;
+      }
+      .social-container {
+        text-align: center;
+      }
+      .social-container img {
+        width: 25px;
+        height: 25px;
+      }
+      .social-container a {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .copyright {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 15px;
+        color: gray;
+      }
+      .cta-button {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 12px 25px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="email-container">
+      <div class="header">
+        <a href="#" class="logo"><img src="assets/logo_dark.png" alt="Company Logo" /></a>
+      </div>
+
+      <div class="hero-content">
+        <img src="assets/PixVerse_Image_Effect_prompt_I want the pictur (2).jpg" alt="Deal Matched" />
+      </div>
+
+      <div class="content">
+        <p class="title">Hello <span>{{username}}</span>,</p>
+        <p>
+          Exciting news! A <strong>deal has been matched</strong> for your listing on {{companyName}}.
+        </p>
+        <p>
+          You can now review the details, connect with the buyer/seller, and move forward to close the deal quickly and safely.
+        </p>
+        <p>
+          <a href="{{dealLink}}" class="cta-button">View Deal Details</a>
+        </p>
+
+        <div class="signature">
+          <p>Best regards,</p>
+          <p>{{companyName}}</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p
+          style="
+            text-align: center;
+            font-size: 22px;
+            font-family: cursive;
+            margin-bottom: 15px;
+          "
+        >
+          Stay in touch
+        </p>
+
+        <div class="social-container">
+          <a href="https://facebook.com" class="facebook" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/145/145802.png" alt="Facebook"/>
+          </a>
+
+          <a href="https://instagram.com" class="instagram" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="Instagram"/>
+          </a>
+
+          <a href="https://youtube.com" class="youtube" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png" alt="YouTube"/>
+          </a>
+        </div>
+
+        <div class="copyright">
+          <p style="margin-bottom: 3px">Email sent by {{companyName}}</p>
+          <p>© {{year}} {{companyName}}. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
